@@ -18,6 +18,12 @@ variable "full_env_code" {
   type        = string
 }
 
+variable "create" {
+  description = "Choose to deploy or not the resource group. Can be True or False. Default to True."
+  type        = bool
+  default     = true
+}
+
 variable "management_lock_level" {
   description = "Specifies the Level to be used for this Lock. Possible values are CanNotDelete and ReadOnly. Changing this forces a new resource to be created."
   type        = string

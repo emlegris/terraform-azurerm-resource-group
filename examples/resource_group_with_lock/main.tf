@@ -7,6 +7,7 @@ module "rg" {
   location              = "canadacentral"
   management_lock_level = "CanNotDelete"
   management_lock_notes = "This resource is protected"
+  create                = true
   tags = {
     "Environment" = "lab"
     "Deployment"  = "terraform"
