@@ -38,3 +38,7 @@ terraform.rc
 
 # MacOS
 *.DS_Store
+
+# Terratest
+**/test/*
+*.go
